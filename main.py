@@ -27,11 +27,11 @@ def main():
     while True:
         command = input("Enter command: ").strip().lower()
 
-        if command == "add_contact":
+        if command == "add":
             name = input("Enter name: ")
             phone = input("Enter phone: ")
             book.add_contact(name, phone)
-        elif command == "show_contact":
+        elif command == "all":
             print("Address Book:")
             print(book)
         elif command == "exit":
