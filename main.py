@@ -25,13 +25,13 @@ def main():
     book = load_data() 
 
     while True:
-        command = input("Enter command (add/show/exit): ").strip().lower()
+        command = input("Enter command: ").strip().lower()
 
-        if command == "add":
+        if command == "add_contact":
             name = input("Enter name: ")
             phone = input("Enter phone: ")
             book.add_contact(name, phone)
-        elif command == "show":
+        elif command == "show_contact":
             print("Address Book:")
             print(book)
         elif command == "exit":
